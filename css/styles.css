@@ -1,0 +1,13 @@
+/****** Main Menu Styling ******/
+nav.main-nav {
+  height: 3em;
+}
+
+nav.main-nav ul {
+  list-style-type: none;
+  display: flex;
+}
+
+nav.main-nav li {
+  padding: 1em;
+}
