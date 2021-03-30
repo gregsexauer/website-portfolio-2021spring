@@ -7,12 +7,12 @@
 body {
   height: 1200px;
   font-size: 18px;
-  background-color: #878584;
+  background-color: #404040;
 }
 
 a:link,
 a:visited {
-  color: #5d6063;
+  color: #3d3d3d;
   text-decoration: none;
 }
 
@@ -28,7 +28,7 @@ a:hover {
 
   width: 100%;
   padding: 50px;
-  background: #e6e3ff;
+  background: #b5b5b5;
 }
 
 .menu {
@@ -47,7 +47,7 @@ a:hover {
 .dropdown:hover .posts-menu {
   display: flex;
   flex-direction: column;
-  background: #bdbad4;
+  background: #949494;
   border-radius: 5px;
   padding-top: 60px;
 
@@ -93,7 +93,7 @@ a:hover {
   display: flex;
   margin-left: 12.5%;
   width: 75%;
-  background-color: #F5CF8E;
+  background-color: #cccccc;
   justify-content: center;
   flex-direction: column;
   margin-bottom: 1em;
@@ -117,7 +117,7 @@ a:hover {
   display: flex;
   margin-left: 12.5%;
   width: 75%;
-  background-color: #52F06E;
+  background-color: #cccccc;
   margin-bottom: 1em;
 }
 
