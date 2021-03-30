@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+body {
+  height: 1200px;
+  font-size: 18px;
+}
+
 /****** Main Menu Styling ******/
 .header {
   position: fixed;
@@ -65,4 +70,31 @@
   z-index: 2;
   position: relative;
   cursor: pointer;
+}
+
+.header-break {
+  height: 200px;
+}
+
+/****** Posts Styling ******/
+
+.post {
+  display: flex;
+  margin-left: 12.5%;
+  width: 75%;
+  background-color: #F5CF8E;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.post-title {
+  font-size: 35px;
+}
+
+.post-date {
+  font-size: 25px;
+}
+
+.post > p {
+  white-space: pre-line;
 }
