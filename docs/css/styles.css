@@ -7,6 +7,17 @@
 body {
   height: 1200px;
   font-size: 18px;
+  background-color: #878584;
+}
+
+a:link,
+a:visited {
+  color: #5d6063;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 /****** Main Menu Styling ******/
@@ -17,7 +28,7 @@ body {
 
   width: 100%;
   padding: 50px;
-  background: #D6E9FE;
+  background: #e6e3ff;
 }
 
 .menu {
@@ -36,7 +47,7 @@ body {
 .dropdown:hover .posts-menu {
   display: flex;
   flex-direction: column;
-  background: #B2D6FF;
+  background: #bdbad4;
   border-radius: 5px;
   padding-top: 60px;
 
@@ -85,6 +96,7 @@ body {
   background-color: #F5CF8E;
   justify-content: center;
   flex-direction: column;
+  margin-bottom: 1em;
 }
 
 .post-title {
@@ -97,4 +109,27 @@ body {
 
 .post > p {
   white-space: pre-line;
+}
+
+/****** Team Styling ******/
+
+.team-member {
+  display: flex;
+  margin-left: 12.5%;
+  width: 75%;
+  background-color: #52F06E;
+  margin-bottom: 1em;
+}
+
+.team-member > img {
+  height: 256px;
+  width: 256px;
+}
+
+.team-member > figure > figcaption {
+  white-space: pre-line;
+}
+
+.team-member > p {
+  margin-left: 1.5em;
 }
