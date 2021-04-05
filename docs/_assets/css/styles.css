@@ -1,3 +1,4 @@
+<<<<<<< HEAD:docs/_assets/css/styles.css
 ---
 ---
 @import "main";
@@ -9,6 +10,8 @@
   font-weight: 300;
 }
 
+=======
+>>>>>>> parent of 174c8bf (minor style tweaks):docs/css/styles.css
 * {
   margin: 0;
   padding: 0;
@@ -58,7 +61,7 @@ a:hover {
 .dropdown:hover .posts-menu {
   display: flex;
   flex-direction: column;
-  background: #adadad;
+  background: #949494;
   border-radius: 5px;
   padding-top: 60px;
 
@@ -108,7 +111,6 @@ a:hover {
   justify-content: center;
   flex-direction: column;
   margin-bottom: 1em;
-  padding: 1em;
 }
 
 .post-title {
@@ -121,7 +123,6 @@ a:hover {
 }
 
 .post > p {
-  font-family: "Bitstream", sans-serif;
   white-space: pre-line;
 }
 
