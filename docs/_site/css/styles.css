@@ -112,7 +112,8 @@ a:hover {
   font-size: 35px;
 }
 
-.post-date {
+.post-date,
+.post-author {
   font-size: 25px;
   margin-bottom: 1em;
 }
