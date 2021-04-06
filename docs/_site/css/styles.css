@@ -133,6 +133,12 @@ a:hover {
   padding: 1em;
 }
 
+.team-member > figure {
+  flex: auto;
+  background-color: #b5b5b5;
+  padding: .5em;
+}
+
 .team-member > img {
   height: 256px;
   width: 256px;
