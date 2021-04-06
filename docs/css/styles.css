@@ -1,3 +1,10 @@
+@font-face {
+  font-family: "Bitstream"
+  src: url("Vera-webfont.woff") format("woff");
+  font-style: normal;
+  font-weight: 300;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -8,12 +15,13 @@ body {
   height: 1200px;
   font-size: 18px;
   background-color: #404040;
+  font-family: sans-serif;
 }
 
 a:link,
 a:visited {
-  color: #3d3d3d;
-  text-decoration: none;
+  color: #2e2e2e;
+/*  text-decoration: none; */
 }
 
 a:hover {
@@ -47,7 +55,7 @@ a:hover {
 .dropdown:hover .posts-menu {
   display: flex;
   flex-direction: column;
-  background: #949494;
+  background: #adadad;
   border-radius: 5px;
   padding-top: 60px;
 
@@ -97,6 +105,7 @@ a:hover {
   justify-content: center;
   flex-direction: column;
   margin-bottom: 1em;
+  padding: 1em;
 }
 
 .post-title {
@@ -120,6 +129,7 @@ a:hover {
   width: 75%;
   background-color: #cccccc;
   margin-bottom: 1em;
+  padding: 1em;
 }
 
 .team-member > img {
