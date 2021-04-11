@@ -1,12 +1,26 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../../../assets/css/styles.css">
+    <style>
+      .sans-serif {
+        font-family: "Bitstream", sans-serif;
+      }
+    </style>
+    <title>{{ page.title }}</title>
+  </head>
 
-<div class="post">
-  <div class="post-title">{{ page.title }}</div>
-  <div class="post-date">{{ page.date | date_to_string }}</div>
-  <div class="post-author">{{ post.author }}</div>
-  <p>
-    {{ content }}
-  </p>
-</div>
+  <body>
+    {% include navigation.html %}
+
+    <div class="post">
+      <div class="post-title">{{ page.title }}</div>
+      <div class="post-date">{{ page.date | date_to_string }}</div>
+      <div class="post-author">{{ post.author }}</div>
+      <p>
+        {{ content }}
+      </p>
+    </div>
+  </body>
+</html>

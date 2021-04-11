@@ -56,7 +56,6 @@ a:hover {
   display: flex;
   flex-direction: column;
   background: #adadad;
-  border-radius: 5px;
   padding-top: 60px;
 
   position: absolute;
@@ -97,10 +96,14 @@ a:hover {
 
 /****** Posts Styling ******/
 
+.post-container {
+  display: flex;
+  justify-content: center;
+}
+
 .post {
   display: flex;
-  margin-left: 12.5%;
-  width: 75%;
+  width: 40em;
   background-color: #cccccc;
   justify-content: center;
   flex-direction: column;
@@ -126,8 +129,7 @@ a:hover {
 
 .team-member {
   display: flex;
-  margin-left: 12.5%;
-  width: 75%;
+  width: 40em;
   background-color: #cccccc;
   margin-bottom: 1em;
   padding: 1em;

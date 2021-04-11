@@ -3,6 +3,16 @@ layout: default
 title: Concrete studio
 ---
 
+{% for tag in site.tags %}
+  <h3>{{ tag[0] }}</h3>
+  <ul>
+    {% for post in tag[1] %}
+      <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+    {% endfor %}
+  </ul>
+{% endfor %}
+
+<div class="post-container">
 <div class="post">
   <div class="post-title">Post Title</div>
   <div class="post-date">3/30/2021</div>
@@ -18,7 +28,9 @@ title: Concrete studio
     Eros donec ac odio tempor orci dapibus ultrices. Phasellus vestibulum lorem sed risus ultricies tristique nulla. Ut ornare lectus sit amet est. Cursus turpis massa tincidunt dui ut ornare lectus. Nullam ac tortor vitae purus faucibus ornare. Amet mauris commodo quis imperdiet massa tincidunt nunc pulvinar sapien. Nec ullamcorper sit amet risus. Sed nisi lacus sed viverra tellus in hac habitasse platea. Bibendum ut tristique et egestas quis ipsum suspendisse. Sed lectus vestibulum mattis ullamcorper. Congue eu consequat ac felis donec et odio pellentesque. Odio ut sem nulla pharetra diam sit amet. Faucibus vitae aliquet nec ullamcorper sit. Dui ut ornare lectus sit. Tempor id eu nisl nunc mi ipsum faucibus.
   </p>
 </div>
+</div>
 
+<div class="post-container">
 <div class="post">
   <div class="post-title">Post Title</div>
   <div class="post-date">3/29/2021</div>
@@ -33,4 +45,5 @@ title: Concrete studio
 
     Eros donec ac odio tempor orci dapibus ultrices. Phasellus vestibulum lorem sed risus ultricies tristique nulla. Ut ornare lectus sit amet est. Cursus turpis massa tincidunt dui ut ornare lectus. Nullam ac tortor vitae purus faucibus ornare. Amet mauris commodo quis imperdiet massa tincidunt nunc pulvinar sapien. Nec ullamcorper sit amet risus. Sed nisi lacus sed viverra tellus in hac habitasse platea. Bibendum ut tristique et egestas quis ipsum suspendisse. Sed lectus vestibulum mattis ullamcorper. Congue eu consequat ac felis donec et odio pellentesque. Odio ut sem nulla pharetra diam sit amet. Faucibus vitae aliquet nec ullamcorper sit. Dui ut ornare lectus sit. Tempor id eu nisl nunc mi ipsum faucibus.
   </p>
+</div>
 </div>
