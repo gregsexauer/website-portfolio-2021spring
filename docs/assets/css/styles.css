@@ -118,6 +118,9 @@ a:hover {
 .post-date,
 .post-author {
   font-size: 25px;
+}
+
+.post-author {
   margin-bottom: 1em;
 }
 

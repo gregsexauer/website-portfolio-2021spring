@@ -3,6 +3,18 @@ layout: default
 title: Audio
 ---
 
+{% for post in site.tags[audio] %}
+  <div class="post-container">
+    <div class="post">
+      <div class="post-title">{{ post.title }}</div>
+      <div class="post-date">{{ post.date | date_to_string }}</div>
+      <div class="post-author">{{ post.author }}</div>
+      {{ post.excerpt }}
+      <a href="{{ post.url }}">Read more</a>
+    </div>
+  </div>
+
+
 <div class="post">
   <div class="post-title">Edge of the World Soundscape</div>
   <div class"post-date">2/14/2021</div>
