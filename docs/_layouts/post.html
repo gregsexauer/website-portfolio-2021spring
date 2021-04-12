@@ -1,28 +1,15 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="../../../assets/css/styles.css">
-    <style>
-      .sans-serif {
-        font-family: "Bitstream", sans-serif;
-      }
-    </style>
-    <title>{{ page.title }}</title>
-  </head>
+---
+layout: default
+---
 
-  <body>
-    {% include navigation.html %}
-
-    <div class="post-container">
-      <div class="post">
-        <div class="post-title">{{ page.title }}</div>
-        <div class="post-date">{{ page.date | date_to_string }}</div>
-        <div class="post-author">{{ page.author }}</div>
-        <p>
-          {{ content }}
-        </p>
-      </div>
-    </div>
-  </body>
-</html>
+<div class="post-container">
+  <div class="post">
+    <div class="post-title">{{ page.title }}</div>
+    <div class="post-date">{{ page.date | date_to_string }}</div>
+    {% assign author = site.authors | where: "name", page.author | first %}
+    {% if author %}
+      <div class="post-author"><a href="{{ author.url }}">{{ author.name }}</a></div>
+    {% endif %}
+    <p>{{ content }}</p>
+  </div>
+</div>

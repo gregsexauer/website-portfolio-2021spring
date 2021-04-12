@@ -1,7 +1,7 @@
 ---
 layout: post
 author: Greg Sexauer
-tags: audio greg-sexauer
+tags: audio
 ---
 <audio controls>
   <source src="/assets/audio/edge_of_the_world_soundscape.mp3" type="audio/mpeg">
