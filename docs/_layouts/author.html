@@ -1,0 +1,25 @@
+---
+layout: default
+---
+
+<!--- TODO this might look good as a sidebar, fill out more info --->
+<div class="post-container">
+  <div class="post">
+    <h1>{{ page.name }}</h1>
+    <h2>{{ page.position }}</h2>
+    {{ content }}
+  </div>
+</div>
+
+{% assign filtered_posts = site.posts | where: "author", page.name %}
+{% for post in filtered_posts %}
+  <div class="post-container">
+    <div class="post">
+      <div class="post-title">{{ post.title }}</div>
+      <div class="post-date">{{ post.date | date_to_string }}</div>
+      <div class="post-author">{{ post.author }}</div>
+      {{ post.excerpt }}
+      <a href="{{ post.url }}">Read more</a>
+    </div>
+  </div>
+{% endfor %}

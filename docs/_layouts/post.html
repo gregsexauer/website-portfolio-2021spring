@@ -1,0 +1,15 @@
+---
+layout: default
+---
+
+<div class="post-container">
+  <div class="post">
+    <div class="post-title">{{ page.title }}</div>
+    <div class="post-date">{{ page.date | date_to_string }}</div>
+    {% assign author = site.authors | where: "name", page.author | first %}
+    {% if author %}
+      <div class="post-author"><a href="{{ author.url }}">{{ author.name }}</a></div>
+    {% endif %}
+    <p>{{ content }}</p>
+  </div>
+</div>

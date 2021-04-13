@@ -1,3 +1,1 @@
-Concrete Studios Logo - GIMP
-Concrete Studios Banner - GIMP
-Concrete Wall Photo - Unsplash
+font - https://www.fontsquirrel.com/fonts/bitstream-vera-sans

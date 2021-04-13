@@ -1,0 +1,22 @@
+---
+layout: default
+title: Team
+---
+
+{% for author in site.authors %}
+  <div class="post-container">
+    <div class="team-member">
+      <figure>
+        <img src="{{ author.image }}" alt="Image of {{ author.name }}">
+        <figcaption><a href="{{ author.url }}">{{ author.name }}</a>
+          {{ author.position }}
+          <a href= "mailto: {{ author.email }}">{{ author.email }}</a>
+          <a href="{{ author.resume }}" download>Resume</a>
+        </figcaption>
+      </figure>
+      <p>{{ author.content | markdownify }}</p>
+    </div>
+  </div>
+{% endfor %}
+
+<!--- TODO make this less linear --->

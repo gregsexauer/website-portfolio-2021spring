@@ -1,0 +1,158 @@
+@font-face {
+  font-family: "Bitstream"
+  src: url("Vera-webfont.woff") format("woff");
+  font-style: normal;
+  font-weight: 300;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 1200px;
+  font-size: 18px;
+  background-color: #404040;
+  font-family: sans-serif;
+}
+
+a:link,
+a:visited {
+  color: #2e2e2e;
+/*  text-decoration: none; */
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/****** Main Menu Styling ******/
+.header {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+
+  width: 100%;
+  padding: 50px;
+  background: #b5b5b5;
+}
+
+.menu {
+  margin-top: 15px;
+}
+
+.menu > li {
+  display: inline;
+  margin-right: 50px;
+}
+
+.menu > li:last-of-type {
+  margin-right: 0;
+}
+
+.dropdown:hover .posts-menu {
+  display: flex;
+  flex-direction: column;
+  background: #adadad;
+  padding-top: 60px;
+
+  position: absolute;
+  top: -25px;
+  left: -30px;
+  z-index: 1;
+}
+
+.posts-menu {
+  display: none;
+}
+
+.posts-menu li {
+  list-style: none;
+  border-bottom: 1px solid #FFF;
+
+  padding: 0 40px 10px 20px;
+  margin: 10px;
+}
+
+.posts-menu li:last-of-type {
+  border-bottom: none;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown > span {
+  z-index: 2;
+  position: relative;
+  cursor: pointer;
+}
+
+.header-break {
+  height: 200px;
+}
+
+/****** Posts Styling ******/
+
+.post-container {
+  display: flex;
+  justify-content: center;
+}
+
+.post {
+  display: flex;
+  width: 40em;
+  background-color: #cccccc;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 1em;
+  padding: 1em;
+}
+
+.post-title {
+  font-size: 35px;
+}
+
+.post-date,
+.post-author {
+  font-size: 25px;
+}
+
+.post-author {
+  margin-bottom: 1em;
+}
+
+.post > p {
+  white-space: pre-line;
+}
+
+/****** Team Styling ******/
+
+.team-member {
+  display: flex;
+  width: 40em;
+  background-color: #cccccc;
+  margin-bottom: 1em;
+  padding: 1em;
+}
+
+.team-member > figure {
+  flex: auto;
+  background-color: #b5b5b5;
+  padding: .5em;
+}
+
+.team-member > img {
+  height: 256px;
+  width: 256px;
+}
+
+.team-member > figure > figcaption {
+  white-space: pre-line;
+}
+
+.team-member > p {
+  margin-left: 1.5em;
+}

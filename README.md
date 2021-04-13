@@ -1,3 +1,7 @@
+At some point the website stopped working online, so it is probably a good idea to download it and host it locally until I get that figured out.
+LINK TO PROJECT:
+https://gregsexauer.github.io/website-portfolio-2021spring/index.html
+
 # Project 3: Website Portfolio
 
 Your task in this unit is to **build a multi-page website using basic html and css files** — as opposed to a site manager like WordPress or Wix — **along with any media assets you wish to embed.** (Any JavaScript or animation you want to add for interactivity is welcome, but above and beyond expectations.) In assigning this, I have two main goals for you:
